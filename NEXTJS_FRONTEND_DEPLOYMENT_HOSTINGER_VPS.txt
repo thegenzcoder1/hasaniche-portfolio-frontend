@@ -1,0 +1,164 @@
+🚀 Next.js App Deployment on Hostinger VPS (HTTPS)
+
+Prerequisites
+- Hostinger VPS purchased
+- Domain name available (Example: hasaniche.com and www.hasaniche.com)
+- GitHub repository ready for this frontend (e.g., git@github.com:yourusername/hasaniche-portfolio-frontend.git)
+- App defaults to listening on PORT 3000
+
+1️⃣ SSH INTO VPS (ROOT)
+From Windows PowerShell / Terminal:
+
+ssh root@<YOUR_VPS_IP>
+
+👉 Accept fingerprint by typing yes
+👉 Enter root password (you will NOT see characters while typing – this is normal)
+
+2️⃣ CREATE A NON-ROOT DEPLOY USER (SECURITY)
+adduser deploy
+usermod -aG sudo deploy
+
+Switch to deploy user:
+su - deploy
+
+3️⃣ UPDATE SERVER
+sudo apt update && sudo apt upgrade -y
+
+4️⃣ INSTALL NODE.JS (LTS)
+curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash -
+sudo apt install -y nodejs
+
+Verify:
+node -v
+npm -v
+
+5️⃣ INSTALL PM2 (PROCESS MANAGER)
+sudo npm install -g pm2
+
+6️⃣ INSTALL NGINX (REVERSE PROXY)
+sudo apt install -y nginx
+sudo systemctl start nginx
+sudo systemctl enable nginx
+
+Test:
+curl http://localhost
+
+7️⃣ CONFIGURE FIREWALL (UFW)
+sudo ufw allow OpenSSH
+sudo ufw allow 80
+sudo ufw allow 443
+sudo ufw enable
+sudo ufw status
+
+*(Note: We do not need to open port 3000 to the public, Nginx will handle routing internally)*
+
+8️⃣ CLONE NEXT.JS APP FROM GITHUB
+mkdir ~/apps
+cd ~/apps
+git clone git@github.com:yourusername/hasaniche-portfolio-frontend.git
+cd hasaniche-portfolio-frontend
+
+Install dependencies:
+npm install
+
+9️⃣ BUILD AND START NEXT.JS APP WITH PM2
+
+Build the production version:
+npm run build
+
+Start with PM2:
+pm2 start npm --name "hasaniche-frontend" -- start
+
+Check:
+pm2 list
+
+🔟 ENABLE PM2 AUTO-START ON REBOOT
+pm2 startup
+
+👉 Copy the command PM2 shows and run it (example):
+sudo env PATH=$PATH:/usr/bin pm2 startup systemd -u deploy --hp /home/deploy
+
+Save process:
+pm2 save
+
+1️⃣1️⃣ SET DOMAIN DNS (HOSTINGER PANEL)
+
+🚨 IMPORTANT: Having duplicate records will break your website!
+In Hostinger DNS Zone Editor, search for existing "A" records named "@" or "www".
+
+👉 If "@" ALREADY EXISTS: Click "Edit" and change its IP to your <YOUR_VPS_IP>
+👉 If "@" DOES NOT EXIST: Add NEW A Record:
+Type    Host    Value           TTL
+A       @       <YOUR_VPS_IP>   Auto
+
+🚨 FOR THE "www" RECORD (IMPORTANT):
+Look for an existing CNAME record named "www".
+👉 If a CNAME for "www" exists, you DO NOT need to add an A record for "www".
+👉 If no CNAME exists and no A record exists for "www", then Add NEW A Record:
+Type    Host    Value           TTL
+A       www     <YOUR_VPS_IP>   Auto
+
+Wait 1–5 minutes.
+
+1️⃣2️⃣ CREATE NGINX CONFIG FOR FRONTEND
+sudo nano /etc/nginx/sites-available/hasaniche.com
+
+Paste:
+
+server {
+    listen 80;
+    server_name hasaniche.com www.hasaniche.com;
+
+    location / {
+        proxy_pass http://localhost:3000;
+        proxy_http_version 1.1;
+        proxy_set_header Upgrade $http_upgrade;
+        proxy_set_header Connection 'upgrade';
+        proxy_set_header Host $host;
+        proxy_cache_bypass $http_upgrade;
+    }
+}
+
+Save & exit nano:
+CTRL + O → ENTER → CTRL + X
+
+Enable site:
+sudo ln -s /etc/nginx/sites-available/hasaniche.com /etc/nginx/sites-enabled/
+sudo nginx -t
+sudo systemctl reload nginx
+
+Check If Site is Enabled:
+sudo ls -l /etc/nginx/sites-enabled/
+
+Test:
+http://hasaniche.com
+
+1️⃣3️⃣ INSTALL CERTBOT (SSL)
+sudo apt install -y certbot python3-certbot-nginx
+
+1️⃣4️⃣ ENABLE HTTPS (LET’S ENCRYPT)
+sudo certbot --nginx -d hasaniche.com -d www.hasaniche.com
+
+✔ Choose Redirect HTTP → HTTPS when prompted
+
+1️⃣5️⃣ VERIFY HTTPS
+Open browser:
+https://hasaniche.com
+
+1️⃣6️⃣ FINAL HEALTH CHECK
+pm2 list
+sudo systemctl status nginx
+
+Reboot test:
+sudo reboot
+
+Reconnect and confirm:
+su - deploy
+pm2 list
+
+✅ DEPLOYMENT COMPLETE 🎉
+- Next.js app running via PM2
+- Nginx reverse proxy routing port 80/443 to 3000
+- HTTPS enabled via Certbot
+- Auto-restart on reboot configured
+- Secure firewall
