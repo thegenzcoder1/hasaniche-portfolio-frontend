@@ -104,13 +104,13 @@ export function ServicesSection() {
                 {service.icon}
               </div>
               <h3 className="text-xl font-bold text-foreground mb-3">{service.title}</h3>
-              <p className="text-muted-foreground mb-6">{service.description}</p>
+              <p className="text-neutral-700 dark:text-neutral-300 mb-6 leading-relaxed">{service.description}</p>
               
               <ul className="space-y-3">
                 {service.features.map((feature, fIndex) => (
                   <li key={fIndex} className="flex items-start gap-3">
-                    <div className="mt-1.5 w-1.5 h-1.5 rounded-full bg-neutral-600" />
-                    <span className="text-sm text-muted-foreground/80">{feature}</span>
+                    <div className="mt-1.5 w-1.5 h-1.5 rounded-full bg-neutral-600 dark:bg-neutral-400 shrink-0" />
+                    <span className="text-sm text-neutral-700 dark:text-neutral-300">{feature}</span>
                   </li>
                 ))}
               </ul>

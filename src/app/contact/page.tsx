@@ -61,7 +61,26 @@ export default function ContactPage() {
             >
               <div className="absolute top-0 right-0 w-64 h-64 bg-gradient-to-bl from-[#6366F1]/10 to-transparent blur-3xl -z-10" />
               
-              <form action="mailto:business@hasaniche.com?subject=Product Growth" method="POST" encType="text/plain" className="space-y-5">
+              <form 
+                onSubmit={(e) => {
+                  e.preventDefault();
+                  const formData = new FormData(e.currentTarget);
+                  const data = Object.fromEntries(formData.entries());
+                  
+                  const subject = encodeURIComponent("Product Growth Inquiry");
+                  const body = encodeURIComponent(
+                    `Name: ${data.name}\n` +
+                    `Email: ${data.email}\n` +
+                    `Phone: ${data.phone}\n` +
+                    `Brand: ${data.brand}\n` +
+                    `Revenue: ${data.revenue}\n\n` +
+                    `Message:\n${data.message}`
+                  );
+                  
+                  window.location.href = `mailto:business@hasaniche.com?subject=${subject}&body=${body}`;
+                }} 
+                className="space-y-5"
+              >
                 <div>
                   <label htmlFor="name" className="block text-sm font-medium text-muted-foreground mb-1.5">Full Name</label>
                   <input 
