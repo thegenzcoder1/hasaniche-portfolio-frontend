@@ -51,7 +51,7 @@ export function Footer() {
             <p className="text-muted-foreground text-sm">
               Book a free strategy session to see how we can optimize your e-commerce growth engine.
             </p>
-            <Link href="/contact" className="inline-block px-5 py-3 rounded-md bg-neutral-800 text-foreground text-sm font-medium hover:bg-neutral-700 transition-colors w-full text-center border border-card-border">
+            <Link href="/contact" className="inline-block px-5 py-3 rounded-md bg-neutral-900 dark:bg-neutral-800 text-white text-sm font-medium hover:bg-neutral-800 dark:hover:bg-neutral-700 transition-colors w-full text-center border border-card-border">
               Get Started
             </Link>
           </div>

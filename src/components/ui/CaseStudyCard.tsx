@@ -25,11 +25,11 @@ export function CaseStudyCard({ brand, problem, solution, result, resultLabel = 
       <div className="flex justify-between items-start mb-8">
         <div>
           <h3 className="text-2xl font-bold text-foreground mb-2">{brand}</h3>
-          <div className="inline-flex items-center gap-1.5 px-3 py-1 bg-neutral-800 text-muted-foreground/80 text-xs font-medium rounded-md">
+          <div className="inline-flex items-center gap-1.5 px-3 py-1 bg-neutral-100 dark:bg-neutral-800 text-muted-foreground/80 text-xs font-medium rounded-md">
             Case Study
           </div>
         </div>
-        <div className="w-10 h-10 rounded-full bg-neutral-800 flex items-center justify-center text-muted-foreground group-hover:text-foreground group-hover:bg-[#6366F1] transition-colors">
+        <div className="w-10 h-10 rounded-full bg-neutral-100 dark:bg-neutral-800 flex items-center justify-center text-muted-foreground group-hover:text-white group-hover:bg-[#6366F1] transition-colors">
           <FiArrowUpRight size={20} />
         </div>
       </div>
@@ -40,7 +40,7 @@ export function CaseStudyCard({ brand, problem, solution, result, resultLabel = 
           <p className="text-muted-foreground/80">{problem}</p>
         </div>
         
-        <div className="h-px w-full bg-neutral-800" />
+        <div className="h-px w-full bg-neutral-200 dark:bg-neutral-800" />
         
         <div>
           <h4 className="text-sm font-semibold text-[#6366F1] uppercase tracking-wider mb-2">Our Solution</h4>

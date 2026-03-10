@@ -129,7 +129,7 @@ export default function SolutionsPage() {
                   transition={{ delay: i * 0.1 }}
                   className="p-8 rounded-2xl bg-card border border-card-border flex flex-col sm:flex-row gap-6 items-start"
                 >
-                  <div className="w-12 h-12 rounded-lg bg-neutral-800 flex items-center justify-center text-[#6366F1] shrink-0 text-xl">
+                  <div className="w-12 h-12 rounded-lg bg-neutral-100 dark:bg-neutral-800 flex items-center justify-center text-[#6366F1] shrink-0 text-xl">
                     {metric.icon}
                   </div>
                   <div>

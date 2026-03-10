@@ -65,26 +65,6 @@ export function HeroSection() {
           </motion.div>
         </div>
 
-        {/* Dashboard/Metrics Visualization Placeholder -> Replaced with Nano Banana */}
-        <motion.div
-          initial={{ opacity: 0, y: 40 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7, delay: 0.5 }}
-          className="mt-20 relative mx-auto max-w-5xl"
-        >
-          <div className="aspect-[16/9] md:aspect-[21/9] rounded-xl border border-card-border bg-card/50 backdrop-blur-xl overflow-hidden shadow-2xl relative">
-            <Image
-              src="/images/growth-focus.png"
-              alt="High-end 3D futuristic abstract growth representation"
-              fill
-              className="object-cover"
-              priority
-            />
-          </div>
-          
-          {/* Decorative gradients */}
-          <div className="absolute -inset-1 bg-gradient-to-r from-[#6366F1] to-[#22C55E] rounded-xl blur opacity-20 -z-10" />
-        </motion.div>
       </div>
     </section>
   );

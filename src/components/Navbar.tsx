@@ -86,12 +86,15 @@ export function Navbar() {
         </div>
 
         {/* Mobile Menu Toggle */}
-        <button
-          className="lg:hidden text-muted-foreground/80 hover:text-foreground p-2"
-          onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-        >
-          {mobileMenuOpen ? <FiX size={24} /> : <FiMenu size={24} />}
-        </button>
+        <div className="flex lg:hidden items-center gap-2">
+          <ThemeToggle />
+          <button
+            className="text-muted-foreground/80 hover:text-foreground p-2"
+            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+          >
+            {mobileMenuOpen ? <FiX size={24} /> : <FiMenu size={24} />}
+          </button>
+        </div>
       </div>
 
       {/* Mobile Navigation */}
@@ -117,10 +120,6 @@ export function Navbar() {
             </Link>
           ))}
           <div className="pt-4 mt-2 border-t border-card-border flex flex-col gap-4">
-            <div className="flex items-center justify-between px-2">
-              <span className="text-sm font-medium text-muted-foreground">Theme</span>
-              <ThemeToggle />
-            </div>
             <Link href="/contact" onClick={() => setMobileMenuOpen(false)}>
               <Button variant="primary" className="w-full">
                 Book Strategy Call

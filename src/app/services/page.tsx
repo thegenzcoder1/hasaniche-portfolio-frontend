@@ -121,7 +121,7 @@ export default function ServicesPage() {
                       <span className="text-muted-foreground">Prepaid Conversion</span>
                       <span className="text-foreground font-mono">+ 142%</span>
                     </div>
-                    <div className="h-2 w-full bg-neutral-800 rounded-full overflow-hidden">
+                    <div className="h-2 w-full bg-neutral-200 dark:bg-neutral-800 rounded-full overflow-hidden">
                       <motion.div 
                         initial={{ width: 0 }}
                         whileInView={{ width: "85%" }}

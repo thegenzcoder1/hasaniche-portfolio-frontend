@@ -35,18 +35,18 @@ export default function Home() {
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <CaseStudyCard 
-                brand="Fashion D2C Brand"
-                problem="Low sales despite high ad spend and poor conversion rate on store."
-                solution="E-Commerce store redesign for performance, Meta ads optimization, and targeted Influencer campaigns."
-                result="4X"
-                resultLabel="Revenue Growth"
+                brand="Apparel Store"
+                problem="Meta Ads CPMs were skyrocketing. Conversions plummeted because they lacked authentic, native-looking UGC content to build trust."
+                solution="We deployed our extensive influencer network to rapidly generate high-quality UGC. Replacing static images with authentic creator reviews slashed CPA."
+                result="-42%"
+                resultLabel="Drop in Cost Per Acquisition"
               />
               <CaseStudyCard 
-                brand="Beauty Brand"
-                problem="Extremely high COD return rate killing profitability and logistics costs."
-                solution="Implemented Partial COD system and optimized checkout behavioral flows using our 10Cr+ user data."
-                result="60%"
-                resultLabel="Reduction in COD returns"
+                brand="Fitness Equipment"
+                problem="Competitor agencies couldn't provide enough influencer volume to saturate the market, leading to ad fatigue and stagnation."
+                solution="Leveraged our proprietary network of 200+ micro-influencers to flood the timeline with localized, diverse content, achieving massive, un-ignorable brand presence."
+                result="12x"
+                resultLabel="Increase in Brand Mentions"
               />
             </div>
           </div>

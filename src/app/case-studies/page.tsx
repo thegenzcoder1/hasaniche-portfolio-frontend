@@ -45,6 +45,22 @@ export default function CaseStudiesPage() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
             <CaseStudyCard 
+              brand="Apparel Store"
+              problem="Meta Ads CPMs were skyrocketing. Conversions plummeted because they lacked authentic, native-looking UGC content to build trust."
+              solution="We deployed our extensive influencer network to rapidly generate high-quality UGC. Replacing static images with authentic creator reviews slashed CPA."
+              result="-42%"
+              resultLabel="Drop in Cost Per Acquisition"
+            />
+            
+            <CaseStudyCard 
+              brand="Fitness Equipment"
+              problem="Competitor agencies couldn't provide enough influencer volume to saturate the market, leading to ad fatigue and stagnation."
+              solution="Leveraged our proprietary network of 200+ influencers to flood the timeline with localized, diverse content, achieving massive, un-ignorable brand presence."
+              result="12x"
+              resultLabel="Increase in Brand Mentions"
+            />
+
+            <CaseStudyCard 
               brand="Fashion D2C Brand"
               problem="Failing to scale with basic Meta ads. Zero trust without influencer validation causing a low conversion rate."
               solution="Overhauled the entire E-Commerce store flow to sync with a new advanced Meta Ad Funnel, and injected 40-tier fashion influencers to drive instant social proof."
