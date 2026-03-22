@@ -96,7 +96,7 @@ export default function InfluencerNetworkPage() {
             <FiAward className="mx-auto text-[#6366F1] w-12 h-12 mb-6" />
             <h3 className="text-2xl font-bold text-foreground mb-4">Scalable Growth</h3>
             <p className="text-muted-foreground leading-relaxed">
-              We don&apos;t just run one-off campaigns. By continuously analyzing performance and doubling down on winning partnerships, we create a predictable, scalable affiliate ecosystem that constantly fuels your brand&apos;s growth.
+              We don&apos;t just run one-off campaigns. By continuously analyzing performance and doubling down on winning partnerships, we create a predictable, scalable influencer ecosystem that constantly fuels your brand&apos;s growth.
             </p>
           </div>
         </div>

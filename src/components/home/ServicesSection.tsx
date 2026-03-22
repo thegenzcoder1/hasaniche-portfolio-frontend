@@ -33,7 +33,7 @@ const services = [
     features: [
       "Influencer discovery",
       "Campaign management",
-      "Affiliate promo tracking",
+      "Performance tracking",
       "ROI optimization"
     ]
   },
