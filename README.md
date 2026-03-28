@@ -142,17 +142,18 @@ Animated number counters (count up on scroll-into-view):
 
 **Section Subtitle:** `We combine multiple specialized strategies to build a complete, high-performance ecosystem for your brand.`
 
-Five service cards in a 3-column grid (last card spans wider):
+Six service cards in a 3-column grid (last card spans wider):
 
 | # | Icon | Service Title | Description | Key Features |
 |---|---|---|---|---|
 | 1 | 🛒 Cart | E-Commerce Store Development | `We build high-converting E-Commerce stores optimized for scale.` | Conversion optimized design · Fast checkout flows · Mobile-first UX · High performance architecture |
 | 2 | 📈 Trend | Meta Ads Management | `We run high-performance ad campaigns across Meta platforms.` | Audience targeting · Creative testing · Conversion optimization · Scaling winning campaigns |
-| 3 | 👥 Users | Influencer Marketing | `We connect brands with influencers from 5K to 200K followers.` | Influencer discovery · Campaign management · Affiliate promo tracking · ROI optimization |
-| 4 | 🔍 Search | SEO Optimization | `We ensure your e-commerce store ranks organically on Google.` | Technical SEO · Product page optimization · Content optimization · Search ranking strategies |
-| 5 | 💵 Dollar | Data Driven Payment Optimization | `Using behavioral data of 10Cr+ online users, we optimize checkout flows.` | Reduce fake COD orders · Push prepaid orders · Use partial COD strategies · Identify high-risk buyers |
+| 3 | 💬 MessageCircle | WhatsApp Marketing | `We automate your entire customer journey on WhatsApp — from abandoned carts to post-purchase retention.` | Abandoned cart recovery (3 automated reminders) · COD confirmation to eliminate fake orders · Realtime order updates & post-purchase follow-ups · Broadcast campaigns with revenue tracking |
+| 4 | 👥 Users | Influencer Marketing | `We connect brands with influencers from 5K to 200K followers.` | Influencer discovery · Campaign management · Affiliate promo tracking · ROI optimization |
+| 5 | 🔍 Search | SEO Optimization | `We ensure your e-commerce store ranks organically on Google.` | Technical SEO · Product page optimization · Content optimization · Search ranking strategies |
+| 6 | 💵 Dollar | Data Driven Payment Optimization | `Using behavioral data of 10Cr+ online users, we optimize checkout flows.` | Reduce fake COD orders · Push prepaid orders · Use partial COD strategies · Identify high-risk buyers |
 
-> **Note:** Card #5 (Payment Optimization) has a special highlight style: indigo gradient background, spans 2 columns on large screens.
+> **Note:** Card #6 (Payment Optimization) has a special highlight style: indigo gradient background, spans 2 columns on large screens.
 
 ---
 
@@ -275,11 +276,32 @@ Reuses the full `ServicesSection` component from the home page (all 5 service ca
 
 | Step | Icon | Title | Description |
 |---|---|---|---|
-| 1 | 👥 Users | Traffic Acquisition | Targeted traffic via Meta Ads, 200+ Influencer Network, and Organic SEO. |
+| 1 | 👥 Users | Traffic Acquisition | Targeted traffic via Meta Ads, WhatsApp campaigns, 200+ Influencer Network, and Organic SEO. |
 | 2 | 🛒 Cart | Store Conversion | High-speed E-Commerce architecture engineered specifically for maximizing CVR. |
 | 3 | 💵 Dollar | Revenue Realization | Payment optimization and COD analytics to ensure orders convert to actual cash. |
 
 A horizontal gradient line connects the three steps visually.
+
+---
+
+#### WhatsApp Marketing Highlight Block
+
+**Badge:** `● Retention & Recovery`
+
+**Title:** `WhatsApp Marketing That Converts`
+
+**Body:** `We automate the full post-purchase and recovery journey on WhatsApp — so every rupee you spend on acquiring a customer compounds into repeat revenue.`
+
+Four feature pills in a 2×2 grid (inside `bg-card border border-card-border rounded-2xl p-8`):
+
+| Feature | Detail |
+|---|---|
+| Abandoned Cart Recovery | Up to 3 automated reminders with product image and coupon code |
+| COD Order Confirmation | Eliminate fake orders, reduce RTO, and convert COD to prepaid |
+| Realtime Order Updates | From Order Placed to Delivered, Review Reminder, and Repeat Purchase nudge |
+| Broadcast Campaigns | Send offers via CSV segments, schedule in advance, and track revenue |
+
+Uses indigo `#6366F1` and green `#22C55E` accents; Framer Motion `whileInView` fade-in animation.
 
 ---
 

@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { FiShoppingCart, FiTrendingUp, FiUsers, FiSearch, FiDollarSign } from "react-icons/fi";
+import { FiShoppingCart, FiTrendingUp, FiUsers, FiSearch, FiDollarSign, FiMessageCircle } from "react-icons/fi";
 
 const services = [
   {
@@ -24,6 +24,17 @@ const services = [
       "Creative testing",
       "Conversion optimization",
       "Scaling winning campaigns"
+    ]
+  },
+  {
+    icon: <FiMessageCircle className="w-8 h-8 text-[#22C55E]" />,
+    title: "WhatsApp Marketing",
+    description: "We automate your entire customer journey on WhatsApp — from abandoned carts to post-purchase retention.",
+    features: [
+      "Abandoned cart recovery (3 automated reminders)",
+      "COD confirmation to eliminate fake orders",
+      "Realtime order updates & post-purchase follow-ups",
+      "Broadcast campaigns with revenue tracking"
     ]
   },
   {

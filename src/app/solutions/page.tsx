@@ -83,7 +83,7 @@ export default function SolutionsPage() {
                   <FiUsers size={28} />
                 </div>
                 <h3 className="text-xl font-bold text-foreground mb-3">1. Traffic Acquisition</h3>
-                <p className="text-muted-foreground text-sm">Targeted traffic via Meta Ads, 200+ Influencer Network, and Organic SEO.</p>
+                <p className="text-muted-foreground text-sm">Targeted traffic via Meta Ads, WhatsApp campaigns, 200+ Influencer Network, and Organic SEO.</p>
               </motion.div>
               
               <motion.div 
@@ -115,6 +115,67 @@ export default function SolutionsPage() {
               </motion.div>
             </div>
           </div>
+
+          {/* WhatsApp Marketing Highlight */}
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="max-w-5xl mx-auto mb-32"
+          >
+            <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-card border border-card-border text-sm font-medium text-muted-foreground/80 mb-6">
+              <span className="w-2 h-2 rounded-full bg-[#22C55E]" />
+              Retention &amp; Recovery
+            </div>
+
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+              <div>
+                <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
+                  WhatsApp Marketing That Converts
+                </h2>
+                <p className="text-muted-foreground text-lg leading-relaxed">
+                  We automate the full post-purchase and recovery journey on WhatsApp — so every rupee you spend on acquiring a customer compounds into repeat revenue.
+                </p>
+              </div>
+
+              <div className="bg-card border border-card-border rounded-2xl p-8">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                  <div className="flex flex-col gap-3">
+                    <div className="w-10 h-10 rounded-lg bg-[#22C55E]/10 border border-[#22C55E]/30 flex items-center justify-center text-[#22C55E]">
+                      <FiMessageCircle size={18} />
+                    </div>
+                    <h4 className="font-semibold text-foreground">Abandoned Cart Recovery</h4>
+                    <p className="text-sm text-muted-foreground">Up to 3 automated reminders with product image and coupon code</p>
+                  </div>
+
+                  <div className="flex flex-col gap-3">
+                    <div className="w-10 h-10 rounded-lg bg-[#6366F1]/10 border border-[#6366F1]/30 flex items-center justify-center text-[#6366F1]">
+                      <FiMessageCircle size={18} />
+                    </div>
+                    <h4 className="font-semibold text-foreground">COD Order Confirmation</h4>
+                    <p className="text-sm text-muted-foreground">Eliminate fake orders, reduce RTO, and convert COD to prepaid</p>
+                  </div>
+
+                  <div className="flex flex-col gap-3">
+                    <div className="w-10 h-10 rounded-lg bg-[#22C55E]/10 border border-[#22C55E]/30 flex items-center justify-center text-[#22C55E]">
+                      <FiMessageCircle size={18} />
+                    </div>
+                    <h4 className="font-semibold text-foreground">Realtime Order Updates</h4>
+                    <p className="text-sm text-muted-foreground">From Order Placed to Delivered, Review Reminder, and Repeat Purchase nudge</p>
+                  </div>
+
+                  <div className="flex flex-col gap-3">
+                    <div className="w-10 h-10 rounded-lg bg-[#6366F1]/10 border border-[#6366F1]/30 flex items-center justify-center text-[#6366F1]">
+                      <FiMessageCircle size={18} />
+                    </div>
+                    <h4 className="font-semibold text-foreground">Broadcast Campaigns</h4>
+                    <p className="text-sm text-muted-foreground">Send offers via CSV segments, schedule in advance, and track revenue</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </motion.div>
 
           {/* Performance Driven Scaling */}
           <div className="max-w-5xl mx-auto">
@@ -150,4 +211,4 @@ export default function SolutionsPage() {
 }
 
 // Icons needed for this specific page that aren't imported from main react-icons
-import { FiUsers, FiShoppingCart, FiDollarSign } from "react-icons/fi";
+import { FiUsers, FiShoppingCart, FiDollarSign, FiMessageCircle } from "react-icons/fi";
