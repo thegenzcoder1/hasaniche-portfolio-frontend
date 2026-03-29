@@ -5,7 +5,7 @@
 #  URL: https://hasaniche.com
 # ════════════════════════════════════════════════════════════
 
-APP_DIR="/home/deploy/apps/hasaniche-frontend"
+APP_DIR="/home/deploy/apps/hasaniche-portfolio-frontend"
 PM2_APP_NAME="hasaniche-frontend"
 PORT=3000
 
