@@ -31,9 +31,9 @@ export function HeroSection() {
             transition={{ duration: 0.5, delay: 0.1 }}
             className="text-5xl md:text-7xl font-bold tracking-tight text-foreground mb-6 leading-tight"
           >
-            Scale Your E-Commerce Brand With{" "}
+            Scale Your D2C E-Commerce Brand With{" "}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#6366F1] to-[#22C55E]">
-              Data, Influencers & Performance
+              Audience Data, Influencers & Performance Marketing
             </span>
           </motion.h1>
 
