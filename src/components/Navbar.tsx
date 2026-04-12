@@ -14,7 +14,7 @@ const NAV_LINKS = [
   { name: "Solutions", href: "/solutions" },
   { name: "Influencer Network", href: "/influencer-network" },
   { name: "Technology", href: "/technology" },
-  { name: "Case Studies", href: "/case-studies" },
+  { name: "Meta Results", href: "/case-studies" },
   { name: "Contact", href: "/contact" },
 ];
 

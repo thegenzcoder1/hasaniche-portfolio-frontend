@@ -17,7 +17,7 @@
   - [Solutions Page (`/solutions`)](#solutions-page-solutions)
   - [Influencer Network Page (`/influencer-network`)](#influencer-network-page-influencer-network)
   - [Technology Page (`/technology`)](#technology-page-technology)
-  - [Case Studies Page (`/case-studies`)](#case-studies-page-case-studies)
+  - [Meta Results Page (`/case-studies`)](#meta-results-page-case-studies)
   - [Contact Page (`/contact`)](#contact-page-contact)
 - [Shared Components](#shared-components)
   - [Navbar](#navbar)
@@ -158,18 +158,34 @@ Six service cards in a 3-column grid (last card spans wider):
 
 #### Section 4 — Featured Case Studies
 
-**Section Title:** `What We Deliver`
+**Section Title:** `Meta Advertising Performance`
 
-**Section Subtitle:** `Here's the kind of impact our solutions are built to deliver for your brand — from cutting ad waste to scaling revenue.`
+**Badge pill:** `● Results That Speak`
 
-Two `CaseStudyCard` components displayed in a 2-column grid:
+**Subtitle:** `A glimpse into the kind of results that become possible when data-led Meta campaigns are executed with precision. Similar outcomes may be achievable for your brand.`
 
-| Brand | Problem | Solution | Result | Result Label |
-|---|---|---|---|---|
-| Apparel Store | Meta Ads CPMs were skyrocketing. Conversions plummeted because they lacked authentic, native-looking UGC content to build trust. | We deploy our extensive influencer network to rapidly generate high-quality UGC — replacing static images with authentic creator reviews to build trust and meaningfully reduce CPA. | `-42%` | Drop in Cost Per Acquisition |
-| Fitness Equipment | Competitor agencies couldn't provide enough influencer volume to saturate the market, leading to ad fatigue and stagnation. | We leverage our proprietary network of 200+ micro-influencers to flood the timeline with localized, diverse content — achieving massive, un-ignorable brand presence that combats ad fatigue. | `12x` | Increase in Brand Mentions |
+**ROAS sub-label (muted, uppercase):** `RETURN ON AD SPEND — CAMPAIGN SNAPSHOTS`
 
-**"View All Case Studies" link** → `/case-studies`
+Four ROAS images in a `flex flex-wrap justify-center gap-4` row — each wrapped in `bg-white rounded-xl p-2 shadow-sm border border-neutral-200`:
+
+| Image file | Alt text | `<Image />` size |
+|---|---|---|
+| `/images/meta/8x_ROAS.JPG` | 8x Return on Ad Spend | 260×180 |
+| `/images/meta/12x_ROAS.JPG` | 12x Return on Ad Spend | 260×180 |
+| `/images/meta/14x_ROAS.JPG` | 14x Return on Ad Spend | 260×180 |
+| `/images/meta/18x_ROAS.JPG` | 18x Return on Ad Spend | 260×180 |
+
+**Year End Revenue sub-label (muted, uppercase):** `YEAR END REVENUE`
+
+Single centered image wrapped in `bg-white rounded-xl p-3 shadow-sm border border-neutral-200 max-w-[520px] mx-auto`:
+
+| Image file | Alt text | `<Image />` size |
+|---|---|---|
+| `/images/meta/Year_End_Sales.JPG` | Year End Sales Revenue | 520×320 |
+
+**Disclaimer (small, italic, muted, centered):** `"Results shown are from actual campaigns managed for a client. Individual outcomes vary based on product, market, and budget."`
+
+> All images use Next.js `<Image />`. White-background images are always wrapped in `bg-white` containers. Section background is `bg-white` (not dark card).
 
 ---
 
@@ -388,28 +404,48 @@ Grid changes from 2-column to 3-column (`lg:grid-cols-3`) to accommodate the new
 
 ---
 
-### Case Studies Page (`/case-studies`)
+### Meta Results Page (`/case-studies`)
 
 **File:** `src/app/case-studies/page.tsx`
 
-**Badge:** `● Our Approach`
+**Badge:** `● Verified Campaign Data`
 
-**H1:** `How We Tackle E-commerce Challenges`
+**H1:** `Meta Advertising Results`
 
-**Subtitle:** `Every brand faces unique growth barriers. Here's how we diagnose the most common e-commerce challenges and the solutions we bring to the table — from broken ad funnels to stagnant organic reach.`
+**Subtitle:** `These are real campaign snapshots from Meta Ads Manager — reflecting the kind of performance that becomes consistent when audience data, creative testing, and funnel strategy align. Results of this nature may be replicable for the right brand.`
 
 ---
 
-#### Case Study Cards (6 total, 2-column grid)
+#### ROAS Grid (4 images, `grid-cols-1 sm:grid-cols-2 lg:grid-cols-4`)
 
-| # | Brand | Problem | Solution | Result | Result Label |
-|---|---|---|---|---|---|
-| 1 | Apparel Store | Meta Ads CPMs were skyrocketing. Conversions plummeted because they lacked authentic, native-looking UGC content to build trust. | We deploy our extensive influencer network to rapidly generate high-quality UGC — replacing static images with authentic creator reviews to build trust and meaningfully reduce CPA. | `-42%` | Drop in Cost Per Acquisition |
-| 2 | Fitness Equipment | Competitor agencies couldn't provide enough influencer volume to saturate the market, leading to ad fatigue and stagnation. | We leverage our proprietary network of 200+ influencers to flood the timeline with localized, diverse content — achieving massive, un-ignorable brand presence that combats ad fatigue. | `12x` | Increase in Brand Mentions |
-| 3 | Fashion D2C Brand | Failing to scale with basic Meta ads. Zero trust without influencer validation causing a low conversion rate. | We overhaul the entire E-Commerce store flow to sync with an advanced Meta Ad Funnel, and place multi-tier fashion influencers to drive instant social proof and purchase confidence. | `4X` | Revenue Growth (MoM) |
-| 4 | Premium Beauty Brand | Burning cash on top-of-funnel ads without capturing the audience. Failing without credible influencer voices to back the product. | We build a comprehensive Meta retargeting funnel and engage beauty micro-influencers to authentically review the brand, driving massive trust right through to E-Commerce checkout. | `312%` | Increase in ROAS |
-| 5 | Tech Accessories Store | Stagnant organic growth and heavy reliance on increasingly expensive Meta Ads CPMs without a post-click strategy. | We deploy technical SEO strategies, optimize product PDPs on the E-Commerce website, and leverage YouTube tech reviewers to build an impenetrable content moat for sustained organic growth. | `215%` | Increase in Organic Traffic |
-| 6 | Home Goods Ecom | First time purchases were unprofitable (CPA > AOV). Competitors were winning by using interior design influencers while they relied solely on flat images. | We integrate subscription logic and post-purchase upsell funnels on the E-Commerce platform, coupled with an Influencer-led Meta Ad whitelisting strategy to maximize order value from day one. | `35%` | Increase in Average Order Value |
+Each card: `bg-white rounded-2xl p-3 border border-neutral-200 shadow-md` with a bold label below the image.
+
+| Image file | Alt text | Label | `<Image />` size |
+|---|---|---|---|
+| `/images/meta/8x_ROAS.JPG` | 8x Return on Ad Spend | `8× ROAS` | 280×200 |
+| `/images/meta/12x_ROAS.JPG` | 12x Return on Ad Spend | `12× ROAS` | 280×200 |
+| `/images/meta/14x_ROAS.JPG` | 14x Return on Ad Spend | `14× ROAS` | 280×200 |
+| `/images/meta/18x_ROAS.JPG` | 18x Return on Ad Spend | `18× ROAS` | 280×200 |
+
+---
+
+#### Year End Revenue Block
+
+Single centered image: `bg-white rounded-2xl p-4 border border-neutral-200 shadow-md max-w-2xl mx-auto`
+
+| Image file | Alt text | `<Image />` size |
+|---|---|---|
+| `/images/meta/Year_End_Sales.JPG` | Year End Sales Revenue | 672×420 |
+
+Caption below image (muted, italic): `"Aggregated year-end revenue performance tracked via Meta Pixel"`
+
+---
+
+#### Disclaimer Card
+
+`bg-card border border-card-border rounded-xl p-6 max-w-3xl mx-auto`
+
+> "All campaign data shown is sourced directly from Meta Ads Manager for an active client of Has A Niche. These results are shared to illustrate the calibre of outcomes our strategies are designed to deliver. Past performance does not guarantee identical results for every brand."
 
 **Ends with:** `CTASection` + `Footer`
 
@@ -486,7 +522,7 @@ On submit, the form composes and opens a `mailto:business@hasaniche.com?subject=
 | Solutions | `/solutions` |
 | Influencer Network | `/influencer-network` |
 | Technology | `/technology` |
-| Case Studies | `/case-studies` |
+| Meta Results | `/case-studies` |
 | Contact | `/contact` |
 
 ---
@@ -500,7 +536,7 @@ Four-column grid layout:
 | Column | Title | Contents |
 |---|---|---|
 | 1 | Brand | Logo + tagline: `We scale E-commerce brands using performance marketing, customized E-Commerce stores, and influencer systems.` |
-| 2 | Company | About Us · Case Studies · Contact |
+| 2 | Company | About Us · Meta Results · Contact |
 | 3 | Expertise | E-Commerce Development · Meta Ads · Influencer Marketing · Payment Optimization (all → `/services`) |
 | 4 | Ready to Scale? | Short description + `Get Started` button → `/contact` |
 
