@@ -24,7 +24,7 @@ export default function Home() {
         <ServicesSection />
 
         {/* Meta Advertising Performance Section */}
-        <section className="py-24 bg-white border-t border-card-border">
+        <section className="py-24 bg-black dark:bg-white border-t border-card-border">
           <div className="container mx-auto px-4 md:px-6">
 
             {/* Section Header */}
@@ -34,20 +34,20 @@ export default function Home() {
               viewport={{ once: true }}
               className="text-center mb-16"
             >
-              <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-neutral-100 border border-neutral-200 text-sm font-medium text-neutral-500 mb-6">
+              <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-neutral-800 border border-neutral-700 text-sm font-medium text-neutral-400 dark:bg-neutral-100 dark:border-neutral-200 dark:text-neutral-500 mb-6">
                 <span className="w-2 h-2 rounded-full bg-[#22C55E]" />
                 Results That Speak
               </div>
-              <h2 className="text-3xl md:text-5xl font-bold text-neutral-900 mb-4">
+              <h2 className="text-3xl md:text-5xl font-bold text-white dark:text-neutral-900 mb-4">
                 Meta Advertising Performance
               </h2>
-              <p className="text-neutral-600 max-w-2xl mx-auto leading-relaxed">
-                A glimpse into the kind of results that become possible when data-led Meta campaigns are executed with precision. Similar outcomes may be achievable for your brand.
+              <p className="text-neutral-300 dark:text-neutral-600 max-w-2xl mx-auto leading-relaxed">
+                A glimpse into the kind of results that become possible when data-led Meta campaigns are executed with precision. Similar outcomes are achievable for your brand.
               </p>
             </motion.div>
 
             {/* ROAS Images */}
-            <p className="text-xs font-semibold text-neutral-400 uppercase tracking-widest text-center mb-6">
+            <p className="text-xs font-semibold text-neutral-500 dark:text-neutral-400 uppercase tracking-widest text-center mb-6">
               Return on Ad Spend — Campaign Snapshots
             </p>
             <div className="flex flex-wrap justify-center gap-4 mb-16">
@@ -78,7 +78,7 @@ export default function Home() {
             </div>
 
             {/* Year End Sales */}
-            <p className="text-xs font-semibold text-neutral-400 uppercase tracking-widest text-center mb-6">
+            <p className="text-xs font-semibold text-neutral-500 dark:text-neutral-400 uppercase tracking-widest text-center mb-6">
               Year End Revenue
             </p>
             <motion.div
