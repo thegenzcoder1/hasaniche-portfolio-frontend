@@ -22,7 +22,7 @@ export function HeroSection() {
             className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-card border border-card-border text-sm font-medium text-muted-foreground/80 mb-8"
           >
             <span className="w-2 h-2 rounded-full bg-[#22C55E] animate-pulse" />
-            Empowering 100+ Brands Worldwide
+            D2C Growth Agency
           </motion.div>
 
           <motion.h1 

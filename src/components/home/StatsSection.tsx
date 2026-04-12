@@ -56,7 +56,6 @@ export function StatsSection() {
     { end: 10, suffix: "Cr+", label: "Audience Data Analysed" },
     { end: 200, suffix: "+", label: "Influencers Network" },
     { end: 100, suffix: "+", label: "Campaigns Managed" },
-    { end: 50, suffix: "+", label: "Stores Scaled" },
   ];
 
   return (
@@ -82,7 +81,7 @@ export function StatsSection() {
           </motion.p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {stats.map((stat, index) => (
             <motion.div
               key={index}

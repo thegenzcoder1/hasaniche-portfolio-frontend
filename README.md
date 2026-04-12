@@ -110,7 +110,7 @@ The landing page. Composed of five stacked sections:
 
 | Field | Content |
 |---|---|
-| Badge / Pill | `● Empowering 100+ Brands Worldwide` |
+| Badge / Pill | `● D2C Growth Agency` |
 | H1 Headline | `Scale Your E-Commerce Brand With` + gradient text: `Data, Influencers & Performance` |
 | Subheading | `We build high-converting E-Commerce stores, run Meta ads, manage influencer marketing campaigns, and optimize your sales pipeline using behavioral data.` |
 | Primary CTA Button | `Start Scaling` → links to `/services` |
@@ -132,7 +132,6 @@ Animated number counters (count up on scroll-into-view):
 | 1 | `10 Cr+` | Audience Data Analysed |
 | 2 | `200+` | Influencers Network |
 | 3 | `100+` | Campaigns Managed |
-| 4 | `50+` | Stores Scaled |
 
 ---
 
@@ -149,7 +148,7 @@ Six service cards in a 3-column grid (last card spans wider):
 | 1 | 🛒 Cart | E-Commerce Store Development | `We build high-converting E-Commerce stores optimized for scale.` | Conversion optimized design · Fast checkout flows · Mobile-first UX · High performance architecture |
 | 2 | 📈 Trend | Meta Ads Management | `We run high-performance ad campaigns across Meta platforms.` | Audience targeting · Creative testing · Conversion optimization · Scaling winning campaigns |
 | 3 | 💬 MessageCircle | WhatsApp Marketing | `We automate your entire customer journey on WhatsApp — from abandoned carts to post-purchase retention.` | Abandoned cart recovery (3 automated reminders) · COD confirmation to eliminate fake orders · Realtime order updates & post-purchase follow-ups · Broadcast campaigns with revenue tracking |
-| 4 | 👥 Users | Influencer Marketing | `We connect brands with influencers from 5K to 200K followers.` | Influencer discovery · Campaign management · Affiliate promo tracking · ROI optimization |
+| 4 | 👥 Users | Influencer Marketing | `We connect brands with influencers from 5K to 200K followers.` | Influencer discovery · Campaign management · Performance tracking · ROI optimization |
 | 5 | 🔍 Search | SEO Optimization | `We ensure your e-commerce store ranks organically on Google.` | Technical SEO · Product page optimization · Content optimization · Search ranking strategies |
 | 6 | 💵 Dollar | Data Driven Payment Optimization | `Using behavioral data of 10Cr+ online users, we optimize checkout flows.` | Reduce fake COD orders · Push prepaid orders · Use partial COD strategies · Identify high-risk buyers |
 
@@ -159,16 +158,16 @@ Six service cards in a 3-column grid (last card spans wider):
 
 #### Section 4 — Featured Case Studies
 
-**Section Title:** `Proven Results`
+**Section Title:** `What We Deliver`
 
-**Section Subtitle:** `See how we've transformed brands from struggling with ad spend to highly profitable e-commerce machines.`
+**Section Subtitle:** `Here's the kind of impact our solutions are built to deliver for your brand — from cutting ad waste to scaling revenue.`
 
 Two `CaseStudyCard` components displayed in a 2-column grid:
 
 | Brand | Problem | Solution | Result | Result Label |
 |---|---|---|---|---|
-| Apparel Store | Meta Ads CPMs were skyrocketing. Conversions plummeted because they lacked authentic, native-looking UGC content to build trust. | We deployed our extensive influencer network to rapidly generate high-quality UGC. Replacing static images with authentic creator reviews slashed CPA. | `-42%` | Drop in Cost Per Acquisition |
-| Fitness Equipment | Competitor agencies couldn't provide enough influencer volume to saturate the market, leading to ad fatigue and stagnation. | Leveraged our proprietary network of 200+ micro-influencers to flood the timeline with localized, diverse content, achieving massive, un-ignorable brand presence. | `12x` | Increase in Brand Mentions |
+| Apparel Store | Meta Ads CPMs were skyrocketing. Conversions plummeted because they lacked authentic, native-looking UGC content to build trust. | We deploy our extensive influencer network to rapidly generate high-quality UGC — replacing static images with authentic creator reviews to build trust and meaningfully reduce CPA. | `-42%` | Drop in Cost Per Acquisition |
+| Fitness Equipment | Competitor agencies couldn't provide enough influencer volume to saturate the market, leading to ad fatigue and stagnation. | We leverage our proprietary network of 200+ micro-influencers to flood the timeline with localized, diverse content — achieving massive, un-ignorable brand presence that combats ad fatigue. | `12x` | Increase in Brand Mentions |
 
 **"View All Case Studies" link** → `/case-studies`
 
@@ -357,7 +356,7 @@ Four metric cards in a 2×2 grid:
 
 **Title:** `Scalable Growth`
 
-**Body:** `We don't just run one-off campaigns. By continuously analyzing performance and doubling down on winning partnerships, we create a predictable, scalable affiliate ecosystem that constantly fuels your brand's growth.`
+**Body:** `We don't just run one-off campaigns. By continuously analyzing performance and doubling down on winning partnerships, we create a predictable, scalable influencer ecosystem that constantly fuels your brand's growth.`
 
 **Ends with:** `CTASection` + `Footer`
 
@@ -375,12 +374,15 @@ Four metric cards in a 2×2 grid:
 
 ---
 
-#### Two Technology Cards
+#### Three Technology Cards
 
 | Icon | Card Title | Body |
 |---|---|---|
 | 🗄️ Database | Behavioral Intelligence at Scale | Has A Niche leverages massive behavioral datasets to predict customer purchase intent. Our systems enable us to optimize checkout funnels, identify high-intent buyer profiles, and significantly reduce cash-on-delivery (COD) return rates across your entire catalog. |
 | ⚡ CloudLightning | Real-Time Performance Tracking | We accurately track the ROI of all meta ad campaigns and influencer partnerships. We ensure absolute accuracy in revenue attribution so that your brand only pays for performance that translates to actual bottom-line growth. |
+| 🌐 Globe | Strategic Link Building for Organic Reach | High-authority backlinks are one of the strongest signals search engines use to rank pages. We build deliberate, niche-relevant backlink profiles for your brand — earning placements on credible industry sites, creator blogs, and digital publications — so your store climbs organically above competitors and stays there without depending entirely on paid spend. |
+
+Grid changes from 2-column to 3-column (`lg:grid-cols-3`) to accommodate the new card.
 
 **Ends with:** `CTASection` + `Footer`
 
@@ -390,11 +392,11 @@ Four metric cards in a 2×2 grid:
 
 **File:** `src/app/case-studies/page.tsx`
 
-**Badge:** `● Track Record`
+**Badge:** `● Our Approach`
 
-**H1:** `Proven E-commerce Success Stories`
+**H1:** `How We Tackle E-commerce Challenges`
 
-**Subtitle:** `See exactly how we've transformed ad-spend bleeding brands into highly scalable revenue machines. We fix broken Meta Ad Funnels, and introduce high-conversion influencer marketing systems where competitors fail.`
+**Subtitle:** `Every brand faces unique growth barriers. Here's how we diagnose the most common e-commerce challenges and the solutions we bring to the table — from broken ad funnels to stagnant organic reach.`
 
 ---
 
@@ -402,12 +404,12 @@ Four metric cards in a 2×2 grid:
 
 | # | Brand | Problem | Solution | Result | Result Label |
 |---|---|---|---|---|---|
-| 1 | Apparel Store | Meta Ads CPMs were skyrocketing. Conversions plummeted because they lacked authentic, native-looking UGC content to build trust. | We deployed our extensive influencer network to rapidly generate high-quality UGC. Replacing static images with authentic creator reviews slashed CPA. | `-42%` | Drop in Cost Per Acquisition |
-| 2 | Fitness Equipment | Competitor agencies couldn't provide enough influencer volume to saturate the market, leading to ad fatigue and stagnation. | Leveraged our proprietary network of 200+ influencers to flood the timeline with localized, diverse content, achieving massive, un-ignorable brand presence. | `12x` | Increase in Brand Mentions |
-| 3 | Fashion D2C Brand | Failing to scale with basic Meta ads. Zero trust without influencer validation causing a low conversion rate. | Overhauled the entire E-Commerce store flow to sync with a new advanced Meta Ad Funnel, and injected 40-tier fashion influencers to drive instant social proof. | `4X` | Revenue Growth (MoM) |
-| 4 | Premium Beauty Brand | Burning cash on top-of-funnel ads without capturing the audience. Failing without credible influencer voices to back the product. | Built a comprehensive Meta retargeting funnel and recruited beauty micro-influencers to authentically review the brand, driving massive trust at the E-Commerce checkout. | `312%` | Increase in ROAS |
-| 5 | Tech Accessories Store | Stagnant organic growth and heavy reliance on increasingly expensive Meta Ads CPMs without a post-click strategy. | Deployed technical SEO strategies, optimized product PDPs on their E-Commerce website, and leveraged YouTube tech reviewers to build an impenetrable content moat. | `215%` | Increase in Organic Traffic |
-| 6 | Home Goods Ecom | First time purchases were unprofitable (CPA > AOV). Competitors were winning by using interior design influencers while they relied solely on flat images. | Integrated subscription logic and post-purchase upsell funnels on their E-Commerce platform, coupled with a heavy Influencer-led Meta Ad whitelisting strategy. | `35%` | Increase in Average Order Value |
+| 1 | Apparel Store | Meta Ads CPMs were skyrocketing. Conversions plummeted because they lacked authentic, native-looking UGC content to build trust. | We deploy our extensive influencer network to rapidly generate high-quality UGC — replacing static images with authentic creator reviews to build trust and meaningfully reduce CPA. | `-42%` | Drop in Cost Per Acquisition |
+| 2 | Fitness Equipment | Competitor agencies couldn't provide enough influencer volume to saturate the market, leading to ad fatigue and stagnation. | We leverage our proprietary network of 200+ influencers to flood the timeline with localized, diverse content — achieving massive, un-ignorable brand presence that combats ad fatigue. | `12x` | Increase in Brand Mentions |
+| 3 | Fashion D2C Brand | Failing to scale with basic Meta ads. Zero trust without influencer validation causing a low conversion rate. | We overhaul the entire E-Commerce store flow to sync with an advanced Meta Ad Funnel, and place multi-tier fashion influencers to drive instant social proof and purchase confidence. | `4X` | Revenue Growth (MoM) |
+| 4 | Premium Beauty Brand | Burning cash on top-of-funnel ads without capturing the audience. Failing without credible influencer voices to back the product. | We build a comprehensive Meta retargeting funnel and engage beauty micro-influencers to authentically review the brand, driving massive trust right through to E-Commerce checkout. | `312%` | Increase in ROAS |
+| 5 | Tech Accessories Store | Stagnant organic growth and heavy reliance on increasingly expensive Meta Ads CPMs without a post-click strategy. | We deploy technical SEO strategies, optimize product PDPs on the E-Commerce website, and leverage YouTube tech reviewers to build an impenetrable content moat for sustained organic growth. | `215%` | Increase in Organic Traffic |
+| 6 | Home Goods Ecom | First time purchases were unprofitable (CPA > AOV). Competitors were winning by using interior design influencers while they relied solely on flat images. | We integrate subscription logic and post-purchase upsell funnels on the E-Commerce platform, coupled with an Influencer-led Meta Ad whitelisting strategy to maximize order value from day one. | `35%` | Increase in Average Order Value |
 
 **Ends with:** `CTASection` + `Footer`
 
@@ -559,4 +561,4 @@ Development server runs at: `http://localhost:3000`
 
 ---
 
-*Last updated: March 2026 — Content reflects current page components as of this date. Update this README whenever page content, stats, case studies, services, or contact details change.*
+*Last updated: April 2026 — Content reflects current page components as of this date. Update this README whenever page content, stats, case studies, services, or contact details change.*

@@ -4,7 +4,7 @@ import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { CTASection } from "@/components/ui/CTASection";
 import { motion } from "framer-motion";
-import { FiDatabase, FiCloudLightning,  } from "react-icons/fi";
+import { FiDatabase, FiCloudLightning, FiGlobe } from "react-icons/fi";
 
 export default function TechnologyPage() {
   return (
@@ -43,7 +43,7 @@ export default function TechnologyPage() {
             </motion.p>
           </div>
 
-          <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 mb-32">
+          <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 mb-32">
             <motion.div 
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -72,6 +72,22 @@ export default function TechnologyPage() {
               <h2 className="text-2xl font-bold text-foreground mb-4">Real-Time Performance Tracking</h2>
               <p className="text-muted-foreground leading-relaxed">
                 We accurately track the ROI of all meta ad campaigns and influencer partnerships. We ensure absolute accuracy in revenue attribution so that your brand only pays for performance that translates to actual bottom-line growth.
+              </p>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.4 }}
+              className="p-10 rounded-3xl bg-card border border-card-border shadow-lg"
+            >
+              <div className="w-14 h-14 rounded-2xl bg-[#6366F1]/10 flex items-center justify-center text-[#6366F1] mb-8">
+                <FiGlobe size={28} />
+              </div>
+              <h2 className="text-2xl font-bold text-foreground mb-4">Strategic Link Building for Organic Reach</h2>
+              <p className="text-muted-foreground leading-relaxed">
+                High-authority backlinks are one of the strongest signals search engines use to rank pages. We build deliberate, niche-relevant backlink profiles for your brand — earning placements on credible industry sites, creator blogs, and digital publications — so your store climbs organically above competitors and stays there without depending entirely on paid spend.
               </p>
             </motion.div>
           </div>

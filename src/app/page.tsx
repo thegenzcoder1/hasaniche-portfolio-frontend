@@ -23,9 +23,9 @@ export default function Home() {
           <div className="container mx-auto px-4 md:px-6">
             <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
               <div className="max-w-2xl">
-                <h2 className="text-3xl md:text-5xl font-bold text-foreground mb-4">Proven Results</h2>
+                <h2 className="text-3xl md:text-5xl font-bold text-foreground mb-4">What We Deliver</h2>
                 <p className="text-lg text-muted-foreground">
-                  See how we&apos;ve transformed brands from struggling with ad spend to highly profitable e-commerce machines.
+                  Here&apos;s the kind of impact our solutions are built to deliver for your brand — from cutting ad waste to scaling revenue.
                 </p>
               </div>
               <Link href="/case-studies" className="inline-flex items-center gap-2 text-[#6366F1] hover:text-foreground font-medium transition-colors">
@@ -37,14 +37,14 @@ export default function Home() {
               <CaseStudyCard 
                 brand="Apparel Store"
                 problem="Meta Ads CPMs were skyrocketing. Conversions plummeted because they lacked authentic, native-looking UGC content to build trust."
-                solution="We deployed our extensive influencer network to rapidly generate high-quality UGC. Replacing static images with authentic creator reviews slashed CPA."
+                solution="We deploy our extensive influencer network to rapidly generate high-quality UGC — replacing static images with authentic creator reviews to build trust and meaningfully reduce CPA."
                 result="-42%"
                 resultLabel="Drop in Cost Per Acquisition"
               />
               <CaseStudyCard 
                 brand="Fitness Equipment"
                 problem="Competitor agencies couldn't provide enough influencer volume to saturate the market, leading to ad fatigue and stagnation."
-                solution="Leveraged our proprietary network of 200+ micro-influencers to flood the timeline with localized, diverse content, achieving massive, un-ignorable brand presence."
+                solution="We leverage our proprietary network of 200+ micro-influencers to flood the timeline with localized, diverse content — achieving massive, un-ignorable brand presence that combats ad fatigue."
                 result="12x"
                 resultLabel="Increase in Brand Mentions"
               />
