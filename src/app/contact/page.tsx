@@ -4,7 +4,7 @@ import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/Button";
-import { FiMail, FiMapPin, FiMessageSquare } from "react-icons/fi";
+import { FiMail, FiMapPin, FiPhone, FiMessageSquare } from "react-icons/fi";
 
 export default function ContactPage() {
   return (
@@ -43,11 +43,21 @@ export default function ContactPage() {
 
                 <div className="flex items-start gap-4">
                   <div className="w-12 h-12 rounded-full bg-card border border-card-border flex items-center justify-center text-[#22C55E] shrink-0">
-                    <FiMessageSquare size={20} />
+                    <FiPhone size={20} />
                   </div>
                   <div>
                     <h4 className="text-sm font-semibold text-muted-foreground uppercase tracking-wider mb-1">Call Us</h4>
-                    <a href="tel:+919585983635" className="text-lg text-foreground hover:text-[#22C55E] transition-colors">+91 95859 83635</a>
+                    <a href="tel:+919345422527" className="text-lg text-foreground hover:text-[#22C55E] transition-colors">+91 93454 22527</a>
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-4">
+                  <div className="w-12 h-12 rounded-full bg-card border border-card-border flex items-center justify-center text-[#22C55E] shrink-0">
+                    <FiMessageSquare size={20} />
+                  </div>
+                  <div>
+                    <h4 className="text-sm font-semibold text-muted-foreground uppercase tracking-wider mb-1">WhatsApp</h4>
+                    <a href="https://wa.me/919345422527" target="_blank" rel="noopener noreferrer" className="text-lg text-foreground hover:text-[#22C55E] transition-colors">+91 93454 22527</a>
                   </div>
                 </div>
               </div>
