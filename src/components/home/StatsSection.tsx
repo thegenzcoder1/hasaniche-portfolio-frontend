@@ -59,7 +59,7 @@ export function StatsSection() {
   ];
 
   return (
-    <section className="py-20 border-y border-card-border bg-background">
+    <section className="pt-8 pb-20 border-y border-card-border bg-background">
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center mb-12">
           <motion.h2 

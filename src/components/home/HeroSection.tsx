@@ -1,14 +1,11 @@
 "use client";
 
 import { motion } from "framer-motion";
-import Link from "next/link";
 import Image from "next/image";
-import { Button } from "../ui/Button";
-import { FiArrowRight, FiPlayCircle } from "react-icons/fi";
 
 export function HeroSection() {
   return (
-    <section className="relative pt-32 pb-20 md:pt-48 md:pb-32 overflow-hidden">
+    <section className="relative pt-32 pb-0 md:pt-48 md:pb-0 overflow-hidden">
       {/* Background Glow */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-[#6366F1]/20 rounded-full blur-[120px] -z-10 pointer-events-none" />
       <div className="absolute top-0 right-0 w-[400px] h-[400px] bg-[#22C55E]/10 rounded-full blur-[100px] -z-10 pointer-events-none" />
@@ -46,23 +43,6 @@ export function HeroSection() {
             We build high-converting E-Commerce stores, run Meta ads, manage influencer marketing campaigns, and optimize your sales pipeline using behavioral data.
           </motion.p>
 
-          <motion.div 
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.3 }}
-            className="flex flex-col sm:flex-row items-center justify-center gap-4"
-          >
-            <Link href="/services">
-              <Button size="lg" variant="primary" className="w-full sm:w-auto gap-2">
-                Start Scaling <FiArrowRight />
-              </Button>
-            </Link>
-            <Link href="/contact">
-              <Button size="lg" variant="outline" className="w-full sm:w-auto gap-2">
-                <FiPlayCircle /> Book Strategy Call
-              </Button>
-            </Link>
-          </motion.div>
         </div>
 
       </div>

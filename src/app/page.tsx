@@ -21,7 +21,6 @@ export default function Home() {
       <main>
         <HeroSection />
         <StatsSection />
-        <ServicesSection />
 
         {/* Meta Advertising Performance Section */}
         <section className="py-24 bg-black dark:bg-white border-t border-card-border">
@@ -103,6 +102,8 @@ export default function Home() {
 
           </div>
         </section>
+
+        <ServicesSection />
 
         <CTASection />
 
